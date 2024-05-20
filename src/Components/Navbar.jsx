@@ -7,21 +7,21 @@ const Navbar = ({setCategory}) => {
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <div class="nav-link" onClick={()=>setCategory("technology")}>Technology</div>
+    <div className="collapse navbar-collapse" id="navbarNav">
+      <ul className="navbar-nav">
+        <li className="nav-item">
+          <div className="nav-link" onClick={()=>setCategory("technology")}>Technology</div>
         </li>
-        <li class="nav-item">
-          <div class="nav-link" onClick={()=>setCategory("business")}>Business</div>
+        <li className="nav-item">
+          <div className="nav-link" onClick={()=>setCategory("business")}>Business</div>
         </li>
-        <li class="nav-item">
-          <div class="nav-link"onClick={()=>setCategory("health")}>Health</div>
+        <li className="nav-item">
+          <div className="nav-link"onClick={()=>setCategory("health")}>Health</div>
         </li>
-        <li class="nav-item">
-          <div class="nav-link"onClick={()=>setCategory("sports")} >Sports</div>
+        <li className="nav-item">
+          <div className="nav-link"onClick={()=>setCategory("sports")} >Sports</div>
         </li>
-        <li class="nav-item">
+        <li className="nav-item">
           <div class="nav-link"onClick={()=>setCategory("entertainment")}>Entertainment</div>
         </li>
 
