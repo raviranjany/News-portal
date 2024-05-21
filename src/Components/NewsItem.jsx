@@ -1,17 +1,68 @@
-import image from '../assets/news.jpg'
+// import image from '../assets/news.jpg'
 
-const NewsItem = ({title, description,  src,  url}) => {
+// const NewsItem = ({title, description,  src,  url}) => {
+//   return (
+//     <div className="card bg-dark  text-light mb-3 d-inline-block my-3 mx-3 px-2 py-2" style={{maxWidth:"345px"}}>
+//   <img src={src?src:image}  style  = {{height:"200px",width:"360px"}}className="card-img-top" alt="..."/>
+//   <div className="card-body">
+//     <h5 className="card-title">{title.slice(0,50)}</h5>
+//     <p className="card-text">{description?description.slice(0,90):"News its is current news today"}</p>
+//     <a href={url} className="btn btn-primary"> Read More </a>
+
+//   </div>
+// </div>
+//   )
+// }
+
+// export default NewsItem
+
+
+// import image from '../assets/news.jpg';
+
+// const NewsItem = ({ title, description, src, url }) => {
+//   return (
+//     <div className="card bg-dark text-light mb-3" style={{ maxWidth: "345px", margin: "15px" }}>
+//       <img
+//         src={src ? src : image}
+//         style={{ height: "200px", objectFit: "scale-down", width: "100%" }}
+//         className="card-img-top"
+//         alt={title}
+//       />
+//       <div className="card-body">
+//         <h5 className="card-title">{title.slice(0, 50)}</h5>
+//         <p className="card-text">
+//           {description ? description.slice(0, 90) : "News its is current news today"}
+//         </p>
+//         <a href={url} className="btn btn-primary">Read More</a>
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default NewsItem;
+
+
+
+import image from '../assets/news.jpg';
+
+const NewsItem = ({ title, description, src, url }) => {
   return (
-    <div className="card bg-dark  text-light mb-3 d-inline-block my-3 mx-3 px-2 py-2" style={{maxWidth:"345px"}}>
-  <img src={src?src:image}  style  = {{height:"200px",width:"360px"}}className="card-img-top" alt="..."/>
-  <div className="card-body">
-    <h5 className="card-title">{title.slice(0,50)}</h5>
-    <p className="card-text">{description?description.slice(0,90):"News its is current news today"}</p>
-    <a href={url} className="btn btn-primary"> Read More </a>
+    <div className="card bg-dark text-light mb-3" style={{ maxWidth: "345px" }}>
+      <img
+        src={src ? src : image}
+        className="card-img-top"
+        alt={title}
+        style={{ height: "200px", width: "100%", objectFit: "cover" }}
+      />
+      <div className="card-body">
+        <h5 className="card-title">{title.slice(0, 50)}</h5>
+        <p className="card-text">
+          {description ? description.slice(0, 90) : "News its is current news today"}
+        </p>
+        <a href={url} className="btn btn-primary">Read More</a>
+      </div>
+    </div>
+  );
+};
 
-  </div>
-</div>
-  )
-}
-
-export default NewsItem
+export default NewsItem;
